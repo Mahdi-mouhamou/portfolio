@@ -24,7 +24,7 @@ function Project() {
       <Container
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: {xs:"column",md:"row"},
           flexWrap: "wrap",
           justifyContent: "space-between",
           alignItems: "stretch",

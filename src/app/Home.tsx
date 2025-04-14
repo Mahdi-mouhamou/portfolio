@@ -1,4 +1,4 @@
-import { Box, Card, CardMedia, Container, Typography } from "@mui/material";
+import { Box, Card, CardMedia, Container, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
 import Button from "@mui/material/Button";
 import Typewriter from "../components/TypeWriter";
@@ -8,29 +8,35 @@ function Home() {
     window.open("/cv.pdf", "_blank");
   };
 
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <div>
       <Container
         maxWidth="xl"
         sx={{
           display: "flex",
+          flexDirection: isMobile ? "column" : "row",
           justifyContent: "center",
-          alignItems: "stretch",
+          alignItems: "start",
           height: "100vh",
           background: "#000814",
           gap: 4,
           flexWrap: "wrap",
-          py: 6,
+          pt:{xs:'5px', md:'35px'},
+          px: { xs: 2, md: 4 },
+
         }}
       >
         {/* Texte à gauche */}
-        <Box sx={{ width: { xs: "100%", md: "45%" }, ml: { md: "24px" } }}>
+        <Box sx={{ width: { xs: "100%", md: "45%" }, ml: { md: "24px" }, textAlign: { xs: "center", md: "left" } }}>
           <Typography
             sx={{
-              fontSize: "50px",
+              fontSize: { xs: "36px", md: "50px" },
               fontFamily: "monospace",
               fontWeight: "800",
-              mt: "50px",
+              mt: { xs: 2, md: "50px" },
               color: "#fff",
             }}
           >
@@ -40,7 +46,7 @@ function Home() {
           <Typography
             variant="h6"
             sx={{
-              fontSize: "32px",
+              fontSize: { xs: "24px", md: "32px" },
               fontFamily: "monospace",
               fontWeight: "600",
               my: "10px",
@@ -50,14 +56,14 @@ function Home() {
             <Typewriter
               texts={[
                 "Développeur Full Stack",
-                "Créateur d’expériences numériques",
+                "Formateur",
               ]}
             />
           </Typography>
           <Typography
             variant="subtitle1"
             sx={{
-              fontSize: "19px",
+              fontSize: { xs: "16px", md: "19px" },
               fontFamily: "Roboto",
               mt: "5px",
               mb: "27px",
@@ -69,7 +75,7 @@ function Home() {
             web. Curieux, adaptable et réactif, je conçois des solutions
             innovantes et performantes en utilisant les dernières technologies.
           </Typography>
-          <Box sx={{ display: "flex", justifyContent: "start" }}>
+          <Box sx={{ display: "flex", justifyContent: { xs: "center", md: "start" } }}>
             <Button
               variant="contained"
               sx={{
@@ -97,10 +103,10 @@ function Home() {
         {/* Image dans une Card élégante */}
         <Box
           sx={{
-            width: { xs: "100%", md: "35%" },
+            width: { xs: "0%", md: "35%" },
             display: "flex",
             justifyContent: "end",
-            alignItems: "start",
+            alignItems: "end",
             mt: { xs: 4, md: "90px" },
           }}
         >

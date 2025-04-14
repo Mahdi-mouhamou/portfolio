@@ -14,7 +14,7 @@ import CardPage from "../components/card/CardPage";
 
 function Education() {
   return (
-    <>
+    <Box>
       <CardHead
         title="Parcours"
         text="Mon parcours éducatif a été une aventure de découverte de soi et de croissance. Voici les détails de ma formation."
@@ -35,7 +35,7 @@ function Education() {
         annee="2020 — 2022"
         text="Branche Mathématiques."
       />
-    </>
+    </Box>
   );
 }
 

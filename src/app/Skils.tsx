@@ -19,8 +19,8 @@ function Skils() {
           flexWrap: "wrap",
           justifyContent: "center",
           width: "100%",
-          height: "70vh",
-          //   border: "solid 2px red",
+          height: {md:"70vh",xs:'100%'},
+          mb:{md:0,xs:2},
           gap: 4,
         }}
       >

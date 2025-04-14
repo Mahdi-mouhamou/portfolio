@@ -75,16 +75,16 @@ const Contact = () => {
 
         <form ref={formRef} onSubmit={sendEmail}>
           <TextField
-            label="Nom"
+            placeholder="Nom"
             name="user_name"
             fullWidth
             required
-            variant="filled"
+            variant="outlined"
             margin="normal"
             sx={{
               "& .MuiInputLabel-root": {
                 color: "#fffff",
-                backgroundColor: "#fff",
+      
 
                  // Couleur du label
               },
@@ -95,17 +95,17 @@ const Contact = () => {
             }}
           />
           <TextField
-            label="Email"
+            placeholder="Email"
             name="user_email"
             type="email"
             fullWidth
             required
-            variant="filled"
+            variant="outlined"
             margin="normal"
             sx={{
               "& .MuiInputLabel-root": {
                 color: "#fffff", // Couleur du label
-                backgroundColor: "#fff",
+           
 
               },
               "& .MuiInputBase-root": {
@@ -115,18 +115,18 @@ const Contact = () => {
             }}
           />
           <TextField
-            label="Message"
+            placeholder="Message"
             name="message"
             multiline
             rows={5}
             fullWidth
             required
-            variant="filled"
+            variant="outlined"
             margin="normal"
             sx={{
               "& .MuiInputLabel-root": {
                 color: "#fffff", // Couleur du label
-                backgroundColor: "#fff",
+             
 
               },
               "& .MuiInputBase-root": {

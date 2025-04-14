@@ -63,7 +63,7 @@ function CardPage({ title, annee, text, children }: EducProps) {
             flexDirection: "column",
             justifyContent: "flex-start",
             alignItems: "start",
-            width: "70%",
+            width: {md:"70%",xs:"100%"},
             border: "solid 1px #1976d2",
           backgroundColor:'#050A30',
             borderRadius: "15px",

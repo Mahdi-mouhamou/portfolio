@@ -16,7 +16,8 @@ function CardHead({ title, text }: CardHeadProp) {
         justifyContent: "center",
         background: "#000814",
         px: 2,
-        py: 5,
+        pt: {xs:'1px',md:5},
+        pb: {xs:'1px',md:5},
       }}
     >
       <Typography
