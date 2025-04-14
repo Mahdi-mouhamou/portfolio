@@ -1,36 +1,38 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Card, CardMedia, Container, Typography } from "@mui/material";
 import React from "react";
 import Button from "@mui/material/Button";
 import Typewriter from "../components/TypeWriter";
 
 function Home() {
   const handleDownload = () => {
-    // Ouvre le fichier PDF dans un nouvel onglet
-    window.open('/cv.pdf', '_blank');
-  }
+    window.open("/cv.pdf", "_blank");
+  };
+
   return (
     <div>
       <Container
         maxWidth="xl"
         sx={{
-          // border: "solid 3px red ",
-          // mt: "50px",
           display: "flex",
           justifyContent: "center",
           alignItems: "stretch",
           height: "100vh",
           background: "#000814",
+          gap: 4,
+          flexWrap: "wrap",
+          py: 6,
         }}
       >
-        <Box sx={{ width: "45%", ml: "24px" }}>
+        {/* Texte à gauche */}
+        <Box sx={{ width: { xs: "100%", md: "45%" }, ml: { md: "24px" } }}>
           <Typography
             sx={{
               fontSize: "50px",
               fontFamily: "monospace",
               fontWeight: "800",
-              mt: "90px",
+              mt: "50px",
+              color: "#fff",
             }}
-            variant="h4"
           >
             Bonjour, <br />
             je suis Mouhamou Mahdi
@@ -63,10 +65,9 @@ function Home() {
             }}
           >
             Jeune diplômé de l'Université des Sciences et Technologies Houari
-            Boumediene, passionné par le développement web, je combine esprit
-            d’équipe, autonomie et réactivité. Curieux et adaptable, j’assimile
-            rapidement les nouvelles technologies pour concevoir des solutions
-            performantes et innovantes.
+            Boumediene, basé en Algérie, je suis passionné par le développement
+            web. Curieux, adaptable et réactif, je conçois des solutions
+            innovantes et performantes en utilisant les dernières technologies.
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "start" }}>
             <Button
@@ -92,24 +93,36 @@ function Home() {
             </Button>
           </Box>
         </Box>
+
+        {/* Image dans une Card élégante */}
         <Box
           sx={{
-            width: "35%",
-            // border: "solid 3px blue ",
+            width: { xs: "100%", md: "35%" },
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            mt: "90px",
+            justifyContent: "end",
+            alignItems: "start",
+            mt: { xs: 4, md: "90px" },
           }}
         >
-          <img
-            style={{ borderRadius: "50%" }}
-            src="/"
-            alt=""
-            width={500}
-            height={600}
-          />
+          <Card
+            sx={{
+              width: 300,
+              borderRadius: "20px",
+              overflow: "hidden",
+              boxShadow: "0px 10px 30px rgba(0,0,0,0.4)",
+              transition: "transform 0.3s ease",
+              "&:hover": {
+                transform: "scale(1.03)",
+              },
+            }}
+          >
+            <CardMedia
+              component="img"
+              height="400"
+              image="/profile.jpg"
+              alt="Mouhamou Mahdi"
+            />
+          </Card>
         </Box>
       </Container>
     </div>
