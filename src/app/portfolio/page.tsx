@@ -1,11 +1,11 @@
 "use client";
 import Navbar from "@/components/Navbar";
-import Footer from "@/app/Footer";
-import Home from "@/app/Home";
+import Footer from "@/app/portfolio/Footer";
+import Home from "@/app/portfolio/Home";
 import { useRef } from "react";
-import Skils from "@/app/Skils";
-import Education from "@/app/Education";
-import Experience from "@/app/Experience";
+import Skills from "@/app/portfolio/Skills";
+import Education from "@/app/portfolio/Education";
+import Experience from "@/app/portfolio/Experience";
 import Project from "./Project";
 import Contact from "./Contact";
 
@@ -46,7 +46,7 @@ export default function Page() {
         <Home />
       </div>
       <div ref={skilsRef}>
-        <Skils />
+        <Skills />
       </div>
       <div ref={educationRef}>
         <Education />

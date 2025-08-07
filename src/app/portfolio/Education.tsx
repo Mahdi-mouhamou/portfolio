@@ -1,16 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import CardHead from "../components/card/CardHead";
-import Card from "../components/card/Card";
-import {
-  Timeline,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineSeparator,
-} from "@mui/lab";
-import CardPage from "../components/card/CardPage";
+import CardHead from "../../components/card/CardHead";
+import CardPage from "../../components/card/CardPage";
 
 function Education() {
   return (

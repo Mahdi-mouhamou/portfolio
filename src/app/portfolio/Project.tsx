@@ -46,7 +46,7 @@ function Project() {
             "My SQL",
           ]}
           date="2021 - 2022"
-          subtitle="Le projet consiste en la création d'une plateforme pour la gestion
+          description="Le projet consiste en la création d'une plateforme pour la gestion
               des périmètres d'exploration de SONATRACH."
         />
         <CardProject
@@ -62,7 +62,7 @@ function Project() {
             "Wordpress",
           ]}
           date="2023 - 2024"
-          subtitle="Le projet consiste en le développement d’une plateforme E-Learning moderne et
+          description="Le projet consiste en le développement d’une plateforme E-Learning moderne et
           fonctionnelle, réalisée avec WordPress en s’appuyant sur le plugin Tutor LMS."
         />
         <CardProject
@@ -78,7 +78,7 @@ function Project() {
             "My SQL",
           ]}
           date="2023 - 2024"
-          subtitle="Le projet consiste en la création d’une boutique en ligne simple, permettant d’afficher les produits et de les gérer via un système CRUD (ajout, modification, suppression)."
+          description="Le projet consiste en la création d’une boutique en ligne simple, permettant d’afficher les produits et de les gérer via un système CRUD (ajout, modification, suppression)."
         />
       </Container>
     </>

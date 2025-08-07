@@ -1,7 +1,7 @@
 import { Box, Card, CardMedia, Container, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
 import Button from "@mui/material/Button";
-import Typewriter from "../components/TypeWriter";
+import Typewriter from "../../components/TypeWriter";
 
 function Home() {
   const handleDownload = () => {

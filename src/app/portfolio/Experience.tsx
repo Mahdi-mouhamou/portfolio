@@ -1,6 +1,6 @@
 import React from "react";
-import CardHead from "../components/card/CardHead";
-import CardPage from "../components/card/CardPage";
+import CardHead from "../../components/card/CardHead";
+import CardPage from "../../components/card/CardPage";
 import { Typography } from "@mui/material";
 
 function Experience() {

@@ -8,10 +8,10 @@ interface CardProjectProp{
     item:string[];
     title:string;
     date:string;
-    subtitle:string;
+    description:string;
 }
 
-function CardProject({src,item,title,date,subtitle}:CardProjectProp) {
+function CardProject({src,item,title,date,description}:CardProjectProp) {
     const style = {
         borderRadius: "8px",
         border: "solid 1px #1976d2",
@@ -120,7 +120,7 @@ function CardProject({src,item,title,date,subtitle}:CardProjectProp) {
                 fontSize: "13px",
               }}
             >
-              {subtitle}
+              {description}
             </Typography>
           </Box>
         </Box>
